@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create | Funkoshop</title>
+</head>
+<body>
+    <header> <!--comienzo del header-->
+        <nav>
+            <picture>
+                 <a href="./index.html">
+                    <img src="../../image/branding/logo_light_horizontal.svg" alt="Logotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <div>
+                <input type="button" value="SALIR">
+            </div>
+        </nav>
+    </header> <!--fin del header-->
+    <main>
+        <h1>CREAR NUEVO ITEM</h1>
+        <form action="">
+            <div>
+                <label for="categoria">Categoría:</label>
+                <select name="categoria" id="categoria">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <label for="licencia">Licencia:</label>
+                <select name="licencia" id="licencia">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+            <div>
+                <label for="Nombre del producto">Nombre del producto:</label>
+                <input type="text" name="Nombre del producto" id="Nombre del producto" placeholder="Kakashi Hatake Shippuden Saga" >
+                <section>
+                    <textarea name="descripcion del producto" id=""Nombre del producto" cols="40" rows="10" placeholder="Descripcion del producto"></textarea>
+                </section>
+            </div>
+            <div>
+                <label for="codigo de producto">SKU:</label>
+                <input type="text" name="" id="codigo de producto" placeholder="SSK111AB001">
+                <label for="costo de producto">Precio:</label>
+                <input type="text" name="precio" id="costo de producto" aria-placeholder="$ 0.000,00">
+                <label for="producto disponible">Stock</label>
+                <input type="text" name="stock" id="producto disponible" placeholder="0">
+            </div>
+            <div>
+                <label for="ofertas">Descuento:</label>
+                <input type="text" name="descuento" id="ofertas" placeholder="0%">
+                <label for="formas de pago">Cuotas:</label>
+                <select name="cuotas" id="formas de pago">
+                    <option value="1 cuota"></option>
+                    <option value="3 cuotas"></option>
+                    <option value="9 cuotas"></option>
+                </select>
+            </div>
+            <div>
+                <label for="selecionar archivo">Imágenes:</label>
+                <input type="file" name="imagenes" id="seleccionar archivo" placeholder="seleccionar archivo">
+            </div>
+            <div>
+                <input type="button" value="Agregar Producto">
+                <input type="button" value="Limpiar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
