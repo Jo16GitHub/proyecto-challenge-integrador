@@ -88,11 +88,3 @@ p {
     margin: 0 auto;
 }
 
-.banner {
-    background-image: url(../image/funkos-banner.webp);
-    background-position: bottom;
-    width: 100vw;
-    height: 38.8em;
-    background-size: cover;;
-}
-
