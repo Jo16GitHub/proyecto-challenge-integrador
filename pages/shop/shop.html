@@ -34,31 +34,46 @@
     </header> <!--fin del header-->
     <aside>
         <section>
-           
-            <form action="" method="post">
+            <div>
                 <label for="item o categoria">BUSCAR</label>
-                <input type="search" name="item o categoria" id="item o categoria" placeholder="item o categoria">
+                <section>
+                    <input type="search" name="item o categoria" id="item o categoria" placeholder="item o categoria">
+                </section>
+            </div>
+            <div>
                 <label for="mayor a menor">ORDENAR POR</label>
-                <select name="mayor a menor" id="mayor a menor" >
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
+                <section>
+                    <select name="mayor a menor" id="mayor a menor">
+                        <option value="precio 1">precio 1</option>
+                        <option value="precio 2">precio 2</option>
+                        <option value="precio 3">precio 3</option>
+                    </select>
+                </section>
+            </div>
+            <div>
                 <h4>PRECIO</h4>
                <label for="min">MIN</label>
                <input type="search" name="min" id="min">
                <label for="max">MAX</label>
                <input type="search" name="max" id="max">
                <h4>FILTRAR</h4>
+            </div>
+            <div>
                 <input type="checkbox" name= "nuevos"id="nuevos">
                 <label for="nuevos">NUEVOS</label>
+            </div>
+            <div>
                 <input type="checkbox" name="ofertas" id="ofertas">
                 <label for="ofertas">OFERTAS</label>
+            </div>
+            <div>
                 <input type="checkbox" name="edicion especial" id="edicion especial">
                 <label for="edicion especial">EDICIÓN ESPECIAL</label>
+            </div>
+            <div>
                 <input type="checkbox" name="favoritos" id="favoritos">
                 <label for="favoritos">FAVORITOS</label>
-            </form>
+            </div>               
         </section>
     </aside>
     <main>
@@ -193,18 +208,18 @@
         <section>
             <nav>
                 <ul>
-                    <il>
+                    <li>
                         <a href="../shop/shop.html">SHOP</a>
-                    </il>
+                    </li>
                     <il>
                         <a href="../admin/register.html">REGISTRARSE</a>
-                    </il>
-                    <il>
+                    </li>
+                    <li>
                         <a href="../admin/login.html">INGRESAR</a>
-                    </il>
-                    <il>
+                    </li>
+                    <li>
                         <a href="../pages/contact.html">CONTACTO</a>
-                    </il>
+                    </li>
                 </ul>
                 <picture>
                     <img src="../../image/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
