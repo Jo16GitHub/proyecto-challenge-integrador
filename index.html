@@ -9,32 +9,43 @@
 </head>
 <body>
      <header> <!--comienzo del header-->
-        <nav>
-            <picture>
+        <nav class="navbar conteiner"> 
+            <picture class="navbar__logo">
                  <a href="./index.html">
                     <img src="./image/branding/logo_light_horizontal.svg" alt="Logotipo de la Marca Funkoshop">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop/shop.html">SHOP<iconify-icon icon="pixelarticons:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./pages/contact.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
                 </li>
-                 <li>
-                    <a href="./pages/admin/login.html">LOGIN</a>
+                 <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./image/cart.html">
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./image/cart.html">
                         <img src="./image/icons/cart-icon.svg" alt="Icono de Carrito">
                     </a>
                 </li>
             </ul>
         </nav>
     </header> <!--fin del header-->
-    <main class="conteiner"> 
-        <section class="banner"> <!--inicio del banner-->
+    <main> 
+        <section> <!--inicio del banner-->
             <article>
                 <h3>Nuevos Ingresos</h3>
                 <p> Descubrí el próximo Funko Pop de tu colección</p>
@@ -146,5 +157,6 @@
         </section>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
