@@ -5,34 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <picture>
-                <a href="./index.html">
+<body class="grid-fixed">
+    <header class="page-header">
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../../index.html">
                    <img src="../../image/branding/logo_light_horizontal.svg" alt="Logotipo de la Marca Funkoshop">
                </a>
            </picture>
            <div>
-            <input type="button" value="SALIR">
+            <a href="../../index.html">
+                <input class="btn btn--primary" type="button" value="SALIR" >
+            </a>
            </div>
         </nav>
     </header>
-   <main>
-        <section>
-            <picture>
-                <a href="">
-                    <img src="../../image/icons/search_icon.svg" alt="Icono de lupa">
-                </a>
-            </picture>
-            <input type="search" name="buscar" placeholder="codigo, nombre o categoria" >
+   <main id="admin" class="container">
+        <section class="admin__search">
+            <iconify-icon class="admin__icon" icon="charm:search"></iconify-icon>
+            <input class="admin__search-bar" type="text" name="search"  id="search" placeholder="código, nombre o categoria" >
         </section>
-        <section> 
-            <div>
+        <section class="admin__list"> 
+            <div class="admin__header">
                 <h2>LISTADO DE PRODUCTOS</h2>
-                <label for="agregar">AGREGAR</label>
-                <input type="submit" name="agregar" id="agregar">
+                <span>AGREGAR<a href="./create.html"><iconify-icon icon="bxs:plus-square"</span>
+                <input type="submit" name="agregar" id="agregar" style="color: #f33;"></iconify-icon></a></span>
             </div>
             <table>
                 <caption>LISTADO DE PRODUCTOS</caption>
@@ -282,5 +281,6 @@
     </section>
     <p>All rights reserved 2023 - Funkoshop &copy;</p>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
