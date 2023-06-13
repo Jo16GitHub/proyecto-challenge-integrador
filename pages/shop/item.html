@@ -5,18 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
-    <header> <!--comienzo del header-->
-        <nav>
-            <picture>
+    <header class="page-header"> <!--comienzo del header-->
+        <nav class="navbar container">
+            <picture class="navbar__logo>">
                  <a href="./item.html">
                     <img src="../../image/branding/logo_light_horizontal.svg" alt="Logotipo de la Marca Funkoshop">
                 </a>
             </picture>
-            <div>
-                <input type="button" value="SALIR">
-            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../shop/shop.html">SHOP<iconify-icon icon="pixelarticons:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                          <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+                 <li class="navbar__item">
+                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="../../image/icons/cart-icon.svg">
+                        <img src="../../image/icons/cart-icon.svg" alt="Icono de Carrito">
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header> <!--fin del header-->
     <main>
